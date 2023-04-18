@@ -1,0 +1,44 @@
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Discord Bot Maker.exe.config
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Discord Bot Maker.exe
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Discord Bot Maker.pdb
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\Newtonsoft.Json.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\RestSharp.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Buffers.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.CodeDom.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Data.Odbc.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Data.OleDb.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Data.SqlClient.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Drawing.Common.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.IO.Packaging.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.IO.Ports.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Memory.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.AccessControl.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.Permissions.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.csproj.AssemblyReference.cache
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.csproj.SuggestedBindingRedirects.cache
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord_Bot_Maker.Form1.resources
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord_Bot_Maker.Properties.Resources.resources
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.csproj.GenerateResource.cache
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.csproj.CoreCompileInputs.cache
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.csproj.Fody.CopyLocal.cache
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.csproj.CopyComplete
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.exe
+C:\Users\adamp\OneDrive\Bureau\Dossier\Code\BotBuilder\Discord Bot Maker\obj\Debug\Discord Bot Maker.pdb
