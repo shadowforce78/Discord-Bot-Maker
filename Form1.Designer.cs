@@ -41,6 +41,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flatClose1 = new FlatUI.FlatClose();
             this.flatMini1 = new FlatUI.FlatMini();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.formSkin1.SuspendLayout();
             this.flatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -71,6 +72,7 @@
             this.flatTabControl1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
             this.flatTabControl1.Controls.Add(this.tabPage1);
             this.flatTabControl1.Controls.Add(this.tabPage2);
+            this.flatTabControl1.Controls.Add(this.tabPage3);
             this.flatTabControl1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.flatTabControl1.ItemSize = new System.Drawing.Size(120, 40);
             this.flatTabControl1.Location = new System.Drawing.Point(0, 72);
@@ -245,6 +247,17 @@
             this.flatMini1.Text = "flatMini1";
             this.flatMini1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(789, 330);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Help";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +295,7 @@
         private FlatUI.FlatLabel flatLabel2;
         private FlatUI.FlatLabel flatLabel1;
         private FlatUI.FlatButton flatButton1;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
