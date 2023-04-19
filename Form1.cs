@@ -125,7 +125,7 @@ namespace Discord_Bot_Maker
                     // open the folder
                     System.Diagnostics.Process.Start(flatLabel2.Text + "\\" + flatTextBox4.Text + "-Bot");
                     // message box to give user the command to install the packages
-                    MessageBox.Show("To install the packages, open the folder and run the command 'npm install' in the terminal!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("To finish the creation of the bot, just run the file \"setup.bat\" in the bot folder!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
