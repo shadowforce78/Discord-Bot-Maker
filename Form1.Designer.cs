@@ -39,9 +39,12 @@
             this.flatTextBox2 = new FlatUI.FlatTextBox();
             this.flatTextBox1 = new FlatUI.FlatTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.flatClose1 = new FlatUI.FlatClose();
             this.flatMini1 = new FlatUI.FlatMini();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.flatTextBox4 = new FlatUI.FlatTextBox();
+            this.flatTextBox5 = new FlatUI.FlatTextBox();
+            this.flatTextBox6 = new FlatUI.FlatTextBox();
             this.formSkin1.SuspendLayout();
             this.flatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -85,6 +88,9 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            this.tabPage1.Controls.Add(this.flatTextBox6);
+            this.tabPage1.Controls.Add(this.flatTextBox5);
+            this.tabPage1.Controls.Add(this.flatTextBox4);
             this.tabPage1.Controls.Add(this.flatButton2);
             this.tabPage1.Controls.Add(this.flatLabel2);
             this.tabPage1.Controls.Add(this.flatLabel1);
@@ -162,7 +168,7 @@
             this.flatTextBox3.BackColor = System.Drawing.Color.Transparent;
             this.flatTextBox3.FocusOnHover = false;
             this.flatTextBox3.Hint = "";
-            this.flatTextBox3.Location = new System.Drawing.Point(525, 212);
+            this.flatTextBox3.Location = new System.Drawing.Point(275, 127);
             this.flatTextBox3.MaxLength = 32767;
             this.flatTextBox3.Multiline = false;
             this.flatTextBox3.Name = "flatTextBox3";
@@ -180,7 +186,7 @@
             this.flatTextBox2.BackColor = System.Drawing.Color.Transparent;
             this.flatTextBox2.FocusOnHover = false;
             this.flatTextBox2.Hint = "";
-            this.flatTextBox2.Location = new System.Drawing.Point(275, 212);
+            this.flatTextBox2.Location = new System.Drawing.Point(525, 127);
             this.flatTextBox2.MaxLength = 32767;
             this.flatTextBox2.Multiline = false;
             this.flatTextBox2.Name = "flatTextBox2";
@@ -221,6 +227,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Plugins";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(789, 330);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Help";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
             // flatClose1
             // 
             this.flatClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -247,16 +264,59 @@
             this.flatMini1.Text = "flatMini1";
             this.flatMini1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // tabPage3
+            // flatTextBox4
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
-            this.tabPage3.Location = new System.Drawing.Point(4, 44);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(789, 330);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Help";
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            this.flatTextBox4.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox4.FocusOnHover = false;
+            this.flatTextBox4.Hint = "";
+            this.flatTextBox4.Location = new System.Drawing.Point(25, 127);
+            this.flatTextBox4.MaxLength = 32767;
+            this.flatTextBox4.Multiline = false;
+            this.flatTextBox4.Name = "flatTextBox4";
+            this.flatTextBox4.ReadOnly = false;
+            this.flatTextBox4.Size = new System.Drawing.Size(244, 29);
+            this.flatTextBox4.TabIndex = 7;
+            this.flatTextBox4.Text = "Bot Name";
+            this.flatTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flatTextBox4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox4.UseSystemPasswordChar = false;
+            this.flatTextBox4.TextChanged += new System.EventHandler(this.flatTextBox4_TextChanged);
+            // 
+            // flatTextBox5
+            // 
+            this.flatTextBox5.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox5.FocusOnHover = false;
+            this.flatTextBox5.Hint = "";
+            this.flatTextBox5.Location = new System.Drawing.Point(525, 212);
+            this.flatTextBox5.MaxLength = 32767;
+            this.flatTextBox5.Multiline = false;
+            this.flatTextBox5.Name = "flatTextBox5";
+            this.flatTextBox5.ReadOnly = false;
+            this.flatTextBox5.Size = new System.Drawing.Size(244, 29);
+            this.flatTextBox5.TabIndex = 8;
+            this.flatTextBox5.Text = "MongoDB link";
+            this.flatTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flatTextBox5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox5.UseSystemPasswordChar = false;
+            this.flatTextBox5.TextChanged += new System.EventHandler(this.flatTextBox5_TextChanged);
+            // 
+            // flatTextBox6
+            // 
+            this.flatTextBox6.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox6.FocusOnHover = false;
+            this.flatTextBox6.Hint = "";
+            this.flatTextBox6.Location = new System.Drawing.Point(275, 212);
+            this.flatTextBox6.MaxLength = 32767;
+            this.flatTextBox6.Multiline = false;
+            this.flatTextBox6.Name = "flatTextBox6";
+            this.flatTextBox6.ReadOnly = false;
+            this.flatTextBox6.Size = new System.Drawing.Size(244, 29);
+            this.flatTextBox6.TabIndex = 9;
+            this.flatTextBox6.Text = "Default Prefix";
+            this.flatTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flatTextBox6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox6.UseSystemPasswordChar = false;
+            this.flatTextBox6.TextChanged += new System.EventHandler(this.flatTextBox6_TextChanged);
             // 
             // Form1
             // 
@@ -296,6 +356,9 @@
         private FlatUI.FlatLabel flatLabel1;
         private FlatUI.FlatButton flatButton1;
         private System.Windows.Forms.TabPage tabPage3;
+        private FlatUI.FlatTextBox flatTextBox4;
+        private FlatUI.FlatTextBox flatTextBox6;
+        private FlatUI.FlatTextBox flatTextBox5;
     }
 }
 
