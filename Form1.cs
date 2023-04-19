@@ -48,24 +48,7 @@ namespace Discord_Bot_Maker
                 flatLabel2.Text = FBD.SelectedPath;
             }
 
-            string BotPathFolder = flatLabel2.Text + "\\djs-base-handler";
-            string SignatureFile = BotPathFolder + flatTextBox4.Text + "\\SIGNATUREBOTTING";
 
-            // if the folder contains SIGNATUREBOTTING file with the text key, MessageBox
-            if (File.Exists(SignatureFile))
-            {
-                string signature = File.ReadAllText(SignatureFile);
-                if (signature == "PPw8zCfocye2TKc3/eVmEO6c40ob8MdazqBsvroj5Zg=")
-                {
-                    MessageBox.Show("This bot is already signed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-
-            else if (!File.Exists(SignatureFile))
-            {
-                // if the folder does not contain SIGNATUREBOTTING file, then clone bot
-                gitClone();
-            }
 
         }
 
@@ -84,6 +67,10 @@ namespace Discord_Bot_Maker
                 }
             };
             process.Start();
+
+            // when the process is done, then show the messagebox
+            process.WaitForExit();
+            MessageBox.Show("The bot was succesfully cloned!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void flatLabel2_Click(object sender, EventArgs e)
@@ -104,31 +91,46 @@ namespace Discord_Bot_Maker
         {
             // if label is not equal to NONE, then create the bot
             if (flatLabel2.Text == "NONE")
-            { 
+            {
                 MessageBox.Show("You have not selected a folder yet!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (flatLabel2.Text != "NONE")
             {
                 // if textboxes are not empty, then create the bot
-                if (flatTextBox1.Text == "" || flatTextBox2.Text == "" || flatTextBox3.Text == "" || flatTextBox4.Text == "" || flatTextBox5.Text == "" || flatTextBox6.Text == "" || flatTextBox1.Text == "Bot Token" || flatTextBox2.Text == "Bot ID" || flatTextBox3.Text == "Dev ID" || flatTextBox4.Text == "Bot Name" || flatTextBox5.Text == "MongoDB link" || flatTextBox6.Text == "Default Prefix")
+                if (flatTextBox1.Text == "" || flatTextBox2.Text == "" || flatTextBox3.Text == "" || flatTextBox4.Text == "" || flatTextBox6.Text == "" || flatTextBox1.Text == "Bot Token" || flatTextBox2.Text == "Bot ID" || flatTextBox3.Text == "Dev ID" || flatTextBox4.Text == "Bot Name" || flatTextBox5.Text == "MongoDB link" || flatTextBox6.Text == "Default Prefix")
                 {
                     MessageBox.Show("You have not filled all informations!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
                 }
+
                 else if (flatTextBox1.Text != "" || flatTextBox2.Text != "" || flatTextBox3.Text != "")
                 {
                     // create the bot
                     MessageBox.Show("Bot created!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //clone bot
+                    gitClone();
                     // edit the config.json file using the function
-                    EditConfig(flatLabel2.Text + "\\djs-base-handler\\config.json");
+                    if (flatTextBox5.Text == "" || flatTextBox5.Text == "MongoDB link (Optional)")
+                    {
+                        string MongoStat = "";
+                    EditConfig(flatLabel2.Text + "\\djs-base-handler\\config.json", MongoStat);
+                    }
+                    else if (flatTextBox5.Text != "" || flatTextBox5.Text != "MongoDB link (Optional)")
+                    {
+                        string MongoStat = flatTextBox5.Text;
+                        EditConfig(flatLabel2.Text + "\\djs-base-handler\\config.json", MongoStat);
+                    }
                     // rename folder
-                    Directory.Move(flatLabel2.Text + "\\djs-base-handler", flatLabel2.Text + "\\" + flatTextBox4.Text+"-Bot");
+                    Directory.Move(flatLabel2.Text + "\\djs-base-handler", flatLabel2.Text + "\\" + flatTextBox4.Text + "-Bot");
                     // open the folder
-                    System.Diagnostics.Process.Start(flatLabel2.Text + "\\" + flatTextBox4.Text+"-Bot");
+                    System.Diagnostics.Process.Start(flatLabel2.Text + "\\" + flatTextBox4.Text + "-Bot");
+                    // message box to give user the command to install the packages
+                    MessageBox.Show("To install the packages, open the folder and run the command 'npm install' in the terminal!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            
+
             }
 
-            
+
         }
 
         private void tabPage3_Click(object sender, EventArgs e)
@@ -142,7 +144,7 @@ namespace Discord_Bot_Maker
         }
 
         // function to edit config.json file in the bot folder
-        public void EditConfig(string BotPath)
+        public void EditConfig(string BotPath, string MongoStat)
         {
             // read the config.json file
             string config = File.ReadAllText(BotPath);
@@ -155,7 +157,7 @@ namespace Discord_Bot_Maker
             // replace the bot name
             config = config.Replace("BOTNAME_HERE", flatTextBox4.Text);
             // replace the mongodb link
-            config = config.Replace("MONGODB_HERE", flatTextBox5.Text);
+            config = config.Replace("MONGODB_HERE", MongoStat);
             // replace the default prefix
             config = config.Replace("PREFIX_HERE", flatTextBox6.Text);
             // write the config.json file with the new informations

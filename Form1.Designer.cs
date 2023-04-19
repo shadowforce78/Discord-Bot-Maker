@@ -31,6 +31,9 @@
             this.formSkin1 = new FlatUI.FormSkin();
             this.flatTabControl1 = new FlatUI.FlatTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flatTextBox6 = new FlatUI.FlatTextBox();
+            this.flatTextBox5 = new FlatUI.FlatTextBox();
+            this.flatTextBox4 = new FlatUI.FlatTextBox();
             this.flatButton2 = new FlatUI.FlatButton();
             this.flatLabel2 = new FlatUI.FlatLabel();
             this.flatLabel1 = new FlatUI.FlatLabel();
@@ -42,9 +45,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.flatClose1 = new FlatUI.FlatClose();
             this.flatMini1 = new FlatUI.FlatMini();
-            this.flatTextBox4 = new FlatUI.FlatTextBox();
-            this.flatTextBox5 = new FlatUI.FlatTextBox();
-            this.flatTextBox6 = new FlatUI.FlatTextBox();
             this.formSkin1.SuspendLayout();
             this.flatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -105,6 +105,60 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Maker";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // flatTextBox6
+            // 
+            this.flatTextBox6.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox6.FocusOnHover = false;
+            this.flatTextBox6.Hint = "";
+            this.flatTextBox6.Location = new System.Drawing.Point(275, 212);
+            this.flatTextBox6.MaxLength = 32767;
+            this.flatTextBox6.Multiline = false;
+            this.flatTextBox6.Name = "flatTextBox6";
+            this.flatTextBox6.ReadOnly = false;
+            this.flatTextBox6.Size = new System.Drawing.Size(244, 29);
+            this.flatTextBox6.TabIndex = 9;
+            this.flatTextBox6.Text = "Default Prefix";
+            this.flatTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flatTextBox6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox6.UseSystemPasswordChar = false;
+            this.flatTextBox6.TextChanged += new System.EventHandler(this.flatTextBox6_TextChanged);
+            // 
+            // flatTextBox5
+            // 
+            this.flatTextBox5.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox5.FocusOnHover = false;
+            this.flatTextBox5.Hint = "";
+            this.flatTextBox5.Location = new System.Drawing.Point(525, 212);
+            this.flatTextBox5.MaxLength = 32767;
+            this.flatTextBox5.Multiline = false;
+            this.flatTextBox5.Name = "flatTextBox5";
+            this.flatTextBox5.ReadOnly = false;
+            this.flatTextBox5.Size = new System.Drawing.Size(244, 29);
+            this.flatTextBox5.TabIndex = 8;
+            this.flatTextBox5.Text = "MongoDB link (Optional)";
+            this.flatTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flatTextBox5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox5.UseSystemPasswordChar = false;
+            this.flatTextBox5.TextChanged += new System.EventHandler(this.flatTextBox5_TextChanged);
+            // 
+            // flatTextBox4
+            // 
+            this.flatTextBox4.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox4.FocusOnHover = false;
+            this.flatTextBox4.Hint = "";
+            this.flatTextBox4.Location = new System.Drawing.Point(25, 127);
+            this.flatTextBox4.MaxLength = 32767;
+            this.flatTextBox4.Multiline = false;
+            this.flatTextBox4.Name = "flatTextBox4";
+            this.flatTextBox4.ReadOnly = false;
+            this.flatTextBox4.Size = new System.Drawing.Size(244, 29);
+            this.flatTextBox4.TabIndex = 7;
+            this.flatTextBox4.Text = "Bot Name";
+            this.flatTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.flatTextBox4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox4.UseSystemPasswordChar = false;
+            this.flatTextBox4.TextChanged += new System.EventHandler(this.flatTextBox4_TextChanged);
             // 
             // flatButton2
             // 
@@ -263,60 +317,6 @@
             this.flatMini1.TabIndex = 0;
             this.flatMini1.Text = "flatMini1";
             this.flatMini1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            // 
-            // flatTextBox4
-            // 
-            this.flatTextBox4.BackColor = System.Drawing.Color.Transparent;
-            this.flatTextBox4.FocusOnHover = false;
-            this.flatTextBox4.Hint = "";
-            this.flatTextBox4.Location = new System.Drawing.Point(25, 127);
-            this.flatTextBox4.MaxLength = 32767;
-            this.flatTextBox4.Multiline = false;
-            this.flatTextBox4.Name = "flatTextBox4";
-            this.flatTextBox4.ReadOnly = false;
-            this.flatTextBox4.Size = new System.Drawing.Size(244, 29);
-            this.flatTextBox4.TabIndex = 7;
-            this.flatTextBox4.Text = "Bot Name";
-            this.flatTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.flatTextBox4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flatTextBox4.UseSystemPasswordChar = false;
-            this.flatTextBox4.TextChanged += new System.EventHandler(this.flatTextBox4_TextChanged);
-            // 
-            // flatTextBox5
-            // 
-            this.flatTextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.flatTextBox5.FocusOnHover = false;
-            this.flatTextBox5.Hint = "";
-            this.flatTextBox5.Location = new System.Drawing.Point(525, 212);
-            this.flatTextBox5.MaxLength = 32767;
-            this.flatTextBox5.Multiline = false;
-            this.flatTextBox5.Name = "flatTextBox5";
-            this.flatTextBox5.ReadOnly = false;
-            this.flatTextBox5.Size = new System.Drawing.Size(244, 29);
-            this.flatTextBox5.TabIndex = 8;
-            this.flatTextBox5.Text = "MongoDB link";
-            this.flatTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.flatTextBox5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flatTextBox5.UseSystemPasswordChar = false;
-            this.flatTextBox5.TextChanged += new System.EventHandler(this.flatTextBox5_TextChanged);
-            // 
-            // flatTextBox6
-            // 
-            this.flatTextBox6.BackColor = System.Drawing.Color.Transparent;
-            this.flatTextBox6.FocusOnHover = false;
-            this.flatTextBox6.Hint = "";
-            this.flatTextBox6.Location = new System.Drawing.Point(275, 212);
-            this.flatTextBox6.MaxLength = 32767;
-            this.flatTextBox6.Multiline = false;
-            this.flatTextBox6.Name = "flatTextBox6";
-            this.flatTextBox6.ReadOnly = false;
-            this.flatTextBox6.Size = new System.Drawing.Size(244, 29);
-            this.flatTextBox6.TabIndex = 9;
-            this.flatTextBox6.Text = "Default Prefix";
-            this.flatTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.flatTextBox6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.flatTextBox6.UseSystemPasswordChar = false;
-            this.flatTextBox6.TextChanged += new System.EventHandler(this.flatTextBox6_TextChanged);
             // 
             // Form1
             // 
