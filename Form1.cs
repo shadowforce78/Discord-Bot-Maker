@@ -126,12 +126,23 @@ namespace Discord_Bot_Maker
                     System.Diagnostics.Process.Start(flatLabel2.Text + "\\" + flatTextBox4.Text + "-Bot");
                     // message box to give user the command to install the packages
                     MessageBox.Show("To finish the creation of the bot, just run the file \"setup.bat\" in the bot folder!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // generate the link
+                    linkGenerator(flatTextBox2.Text);
                 }
 
             }
 
 
         }
+
+        private void linkGenerator(string BotID)
+        {
+            // generate the link
+            string link = "https://discord.com/api/oauth2/authorize?client_id=" + BotID + "&permissions=8&scope=applications.commands%20bot";
+            // process the link
+            Process.Start(link);
+        }
+
 
         private void tabPage3_Click(object sender, EventArgs e)
         {
